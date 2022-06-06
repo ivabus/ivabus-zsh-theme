@@ -6,4 +6,4 @@ Changes:
 
 - Now theme does not depend on GitHub
 
-![Screenshot]()
+![Screenshot](/screenshot.png)
