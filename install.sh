@@ -25,4 +25,19 @@ then
 	fi
 	curl -fsSL https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/ivabus.zsh-theme > ~/.oh-my-zsh/custom/themes/ivabus.zsh-theme
 	echo "Now you need to set ivabus as your ZSH_THEME in .zshrc"
+	exit 0
 fi
+
+if [ -f $(which wget) ]
+then
+	if [[ $INSTALL_OHMYZSH = "y" || $INSTALL_OHMYZSH = "Y" ]]
+	then
+		 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+	fi
+	wget https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/ivabus.zsh-theme -O ~/.oh-my-zsh/custom/themes/ivabus.zsh-theme
+	echo "Now you need to set ivabus as your ZSH_THEME in .zshrc"
+	exit 0
+fi
+
+echo "Could not find a curl or wget. Install one of them, and then restart this script."
+exit 255
