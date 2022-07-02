@@ -6,7 +6,7 @@ then
 	exit 255
 fi
 
-if [ ! -d ~/.oh-my-zsh/ ]
+if [ ! -d $ZSH ]
 then
 	echo "You need to install oh-my-zsh first."
 	read -p "Install (y/N)?: " INSTALL_OHMYZSH
@@ -24,7 +24,8 @@ then
 		 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	fi
 	curl -fsSL https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/ivabus.zsh-theme > ~/.oh-my-zsh/custom/themes/ivabus.zsh-theme
-	echo "Now you need to set ivabus as your ZSH_THEME in .zshrc"
+	/usr/bin/env zsh -c "source $ZSH/oh-my-zsh.sh && omz theme set ivabus"
+	echo "Theme set"
 	exit 0
 fi
 
@@ -35,7 +36,8 @@ then
 		 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 	fi
 	wget https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/ivabus.zsh-theme -O ~/.oh-my-zsh/custom/themes/ivabus.zsh-theme
-	echo "Now you need to set ivabus as your ZSH_THEME in .zshrc"
+	/usr/bin/env zsh -c "source $ZSH/oh-my-zsh.sh && omz theme set ivabus"
+	echo "Theme set"
 	exit 0
 fi
 
