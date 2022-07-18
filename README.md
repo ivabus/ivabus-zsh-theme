@@ -13,3 +13,7 @@ Install ivabus-zsh-theme via curl
 Install ivabus-zsh-theme via wget
 
 	sh -c "$(wget https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/install.sh -O -)"
+
+## License
+
+[WTFPL](https://wtfpl.net)
