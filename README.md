@@ -16,4 +16,4 @@ Install ivabus-zsh-theme via wget
 
 ## License
 
-[WTFPL](https://wtfpl.net)
+[WTFPL](http://www.wtfpl.net)
