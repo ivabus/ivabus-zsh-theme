@@ -2,6 +2,12 @@
 
 Clean zsh prompt theme.
 
+# Inside
+
+- root indication
+- exit codes
+- git info
+
 ![Screenshot](/screenshot.png)
 
 ## How to install
