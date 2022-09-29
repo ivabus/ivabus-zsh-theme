@@ -2,7 +2,7 @@
 
 Clean zsh prompt theme.
 
-# Inside
+## Inside
 
 - root indication
 - exit codes
