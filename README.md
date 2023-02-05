@@ -1,25 +1,19 @@
 # ivabus-zsh-theme
 
-Clean zsh prompt theme.
+Clean zsh prompt theme. Does not require oh-my-zsh anymore.
 
-## Inside
+## Features
 
 - root indication
 - exit codes
-- git info
+- oh-my-zsh independence 
 
 ![Screenshot](/screenshot.png)
 
 ## How to install
 
-Install ivabus-zsh-theme via curl
-
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/install.sh)"
-
-Install ivabus-zsh-theme via wget
-
-	sh -c "$(wget https://raw.githubusercontent.com/ivabus/ivabus-zsh-theme/master/install.sh -O -)"
+Copy ivabus.zsh-theme file to any location and `source` it in your `.zshrc` or just enable it each time you need it in your shell.
 
 ## License
 
-[WTFPL](http://www.wtfpl.net)
+This zsh theme is distributed under Unlicense.
